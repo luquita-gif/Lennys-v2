@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/img/fondo.jpeg');
+    background: url('img/fondo.jpeg');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
