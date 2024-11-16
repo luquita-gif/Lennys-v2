@@ -3,7 +3,7 @@ body{
     justify-content: start;
     align-items:baseline;
     min-height: 100vh;
-    background: url('../pages/img/fondo.jpg');
+    background: url('../img/fondo.jpg');
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
