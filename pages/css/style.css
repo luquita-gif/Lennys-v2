@@ -9,6 +9,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
 }
+
 .publicidad span{
     align-items: start;
     margin-right: 10px;
@@ -20,11 +21,19 @@ body{
 }
 nav{
     background-color: #000000a1;
+    overflow: hidden;
 }
 
 .container{
     color: white;
     text-align: center;
+    width:996px;
+	margin:0px auto;
+	font-size:1em;
+}
+.section{
+    float: left;
+    width: 70%;
 }
 #presentacion{
     border: 1px solid rgba(43, 30, 30, 0.393) !important;
@@ -42,6 +51,10 @@ nav{
  border-radius: 8%;
  padding: 8px;
 }
+.footer{
+
+
+}
 #piePagina{
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid rgba(255, 255, 255, 0.272);
@@ -49,12 +62,80 @@ nav{
     background-color: #4f1919ad;
     color: rgba(255, 255, 255, 0.802);
     padding: 3px;
-    text-align: center;
+    margin:10px;
+	text-align:center;
+    clear:both;
 }
 #comentarioCarrusel{
     color: white;
     background-color: #00000065;
     border-radius: 10px;
 }
-
-
+.imagenBarra{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 5px;
+}
+.imagenBarra2{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.imagenBarra3{
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    padding: 5px;
+    justify-content: space-around;
+}
+#fondo-barra{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.carousel-item{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:980px) {
+    .container {
+        width:98%;
+    }
+    section {
+        width:68%;
+    }
+}
+@media screen and (max-width:700px) {
+    aside,section {
+        float:none;
+        width:96%;
+    }
+    nav, section {
+        font-size:1.2em;
+    }
+    aside {
+        margin-top:5px;
+    }
+    nav ul {
+        float:none;
+        clear:both;
+    }
+}
+@media screen and (max-width:480px) {
+    aside {
+        display:none;
+    }
+    nav, section {
+        font-size:1.5em;
+    }
+    section {
+        width:94%;
+    }
+    nav ul {
+        float:left;
+        clear:none;
+        width:50%;
+    }
+    nav ul li {
+        float:none;
+    }
+}

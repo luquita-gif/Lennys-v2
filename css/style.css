@@ -1,68 +1,274 @@
-/*linear-gradient(rgba(0, 0, 0, 0.765), rgba(17, 16, 16, 0.628), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.576), rgba(0, 0, 0, 0.633))
 
- esto estaba metido antes del body en unas {} sin nombre ni clase pero nose que funcion cumple
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    y yo lo meti dentro del body porque me tiraba error arriba en css */
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('/img/fondo.jpeg');
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    
+    max-width: 1744px;
+    max-height: 1064px;
+    min-width: 344px;
+    min-height: 614px;
+    border-radius: 12px;
+    padding: 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.678), grey, rgba(0, 0, 0, 0.534));
 }
-nav{
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.container h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.096);
+}
+.texto-3d {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+
+}
+.container {
+    background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    padding: 5%;
+}
+
+nav {
     position: relative;
-    width: 524px;
-    height: 50px;
+    width: 100%;
+    max-width: 524px;
+    height: auto;
     background: #22222284;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en múltiples líneas */
+    padding: 10px 0;
 }
-nav a{
+
+nav a {
     position: relative;
     display: inline-block;
     font-size: 1em;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
-    padding: 0 23px;
+    padding: 5px 10px;
     z-index: 1;
-
+    white-space: nowrap; /* Evita que los textos se corten */
 }
-nav span{
+
+nav span {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    width:45px ;
     height: 100%;
-    background:linear-gradient(45deg, #4f1919, #ff3333);
+    background: linear-gradient(45deg, #4f1919, #ff3333);
     border-radius: 8px;
     transition: .3s;
+    width: 0; /* Ajustamos con el hover */
 }
 
-nav a:nth-child(1):hover~span{
-    left: 50px;
+nav a:nth-child(1):hover ~ span {
+    left: 0;
+    width: 60px;
+}
+nav a:nth-child(2):hover ~ span {
+    left: 80px;
     width: 80px;
 }
-nav a:nth-child(2):hover~span{
-    left: 140px;
+nav a:nth-child(3):hover ~ span {
+    left: 180px;
+    width: 90px;
+}
+nav a:nth-child(4):hover ~ span {
+    left: 280px;
     width: 100px;
 }
-nav a:nth-child(3):hover~span{
-    left: 260px;
-    width: 100px;
+
+#piePagina{
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid rgba(255, 255, 255, 0.272);
+    border-radius: 8px;
+    background-color: #00000088;
+    color: rgba(255, 255, 255, 0.802);
+    padding: 3px;
+    text-align: center;
+	clear:both;
+    display: flex;
+    margin:1px;
+    display: flex;
+    justify-content: space-around;
+
 }
-nav a:nth-child(4):hover~span{
-    left: 370px;
-    width: 100px;
+.col-md-7 img{
+    width:30px; 
+    height:25px;
+    border-radius: 50%;
+
 }
+
+@media(max-width:900px) {
+    body{
+
+        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 12px;
+        padding: 5%;
+        background: linear-gradient(rgba(0, 0, 0, 0.678), grey, rgba(0, 0, 0, 0.534));
+    }
+    nav {
+        overflow: hidden;
+    }
+    nav ul {
+        list-style-type:none;
+        float:left;
+        padding:0px;
+    }
+    nav ul li {
+        float:left;
+        padding:3px 10px;
+        margin:2px;
+        background:#ccccff;
+        -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+    }
+    .container h3{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        padding: 2%;
+        background: rgba(255, 255, 255, 0.096);
+    }
+    .container {
+        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+        padding: 5%;
+    }
+    .texto-3d {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+    }
+    .col-md-7 img{
+        width:30px; 
+        height:25px;
+        border-radius: 50%;
+    
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 5%;
+        background: linear-gradient(rgba(0, 0, 0, 0.678), grey, rgba(0, 0, 0, 0.534));
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    nav span {
+        display: none; /* Opcional: Ocultar el span en pantallas pequeñas */
+    }
+    .container h3{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        padding: 2%;
+        background: rgba(255, 255, 255, 0.096);
+    }
+    .container {
+        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+        padding: 5%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .texto-3d {
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+    
+    }
+    .col-md-7 img{
+        width:30px; 
+        height:25px;
+        border-radius: 50%;
+    
+    }
+}
+@media(max-width:450px)
+{
+    body{
+        border-radius: 12px;
+        padding: 5%;
+        background: linear-gradient(rgba(0, 0, 0, 0.678), grey, rgba(0, 0, 0, 0.534));
+    }
+    nav {
+        justify-content: center;
+    }
+    nav a {
+        font-size: 0.8em;
+    }
+    .container h3{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        padding: 2%;
+        background: rgba(255, 255, 255, 0.096);
+    }
+
+    .container {
+        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        align-items: center;
+        padding: 5%;
+    }
+    .texto-3d {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+    }
+    .col-md-7 img{
+        width:30px; 
+        height:25px;
+        border-radius: 50%;
+    
+    }
+}
+
