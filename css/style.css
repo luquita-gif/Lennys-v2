@@ -1,6 +1,5 @@
 
 body{
-<<<<<<< HEAD
     max-width: 1744px;
     max-height: 1064px;
     min-width: 344px;
@@ -8,19 +7,7 @@ body{
     border-radius: 12px;
     padding: 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.678), grey, rgba(0, 0, 0, 0.534));
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('../img/fondo.jpeg');
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    
->>>>>>> 93cf8a952338c0447763b7d5f2fce45ca86405d9
+
 }
 ::-webkit-scrollbar {
     display: none;
@@ -44,7 +31,7 @@ body{
 
 }
 .container {
-    background: url('/pages/img/fondo5.jpg');
+    background: url('../pages/img/fondo5.jpg');
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -139,7 +126,7 @@ nav a:nth-child(3):hover ~ span {
 @media(max-width:900px) {
     body{
 
-        background: url('/pages/img/fondo5.jpg');
+        background: url('../pages/img/fondo5.jpg');
         font-size: 18px;
         padding: 20px;
         border-radius: 12px;
@@ -172,7 +159,7 @@ nav a:nth-child(3):hover ~ span {
         background: rgba(255, 255, 255, 0.096);
     }
     .container {
-        background: url('/pages/img/fondo5.jpg');
+        background: url('../pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;
@@ -227,7 +214,7 @@ nav a:nth-child(3):hover ~ span {
         background: rgba(255, 255, 255, 0.096);
     }
     .container {
-        background: url('/pages/img/fondo5.jpg');
+        background: url('../pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;
@@ -282,7 +269,7 @@ nav a:nth-child(3):hover ~ span {
     }
 
     .container {
-        background: url('/pages/img/fondo5.jpg');
+        background: url('../pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;
