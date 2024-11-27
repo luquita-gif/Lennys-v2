@@ -30,13 +30,14 @@ body{
 
 }
 .container {
-    background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+    background: url('/pages/img/fondo5.jpg');
     display: flex;
     flex-direction: column;
     border-radius: 12px;
     align-items: center;
     padding: 5%;
 }
+
 
 nav {
     position: relative;
@@ -64,6 +65,16 @@ nav a {
     z-index: 1;
     white-space: nowrap; /* Evita que los textos se corten */
 }
+nav a img{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+}
+nav a img:hover{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+}
 
 nav span {
     position: absolute;
@@ -77,20 +88,16 @@ nav span {
 }
 
 nav a:nth-child(1):hover ~ span {
-    left: 0;
-    width: 60px;
-}
-nav a:nth-child(2):hover ~ span {
-    left: 80px;
-    width: 80px;
-}
-nav a:nth-child(3):hover ~ span {
-    left: 180px;
+    left: 30px;
     width: 90px;
 }
-nav a:nth-child(4):hover ~ span {
-    left: 280px;
+nav a:nth-child(2):hover ~ span {
+    left: 145px;
     width: 100px;
+}
+nav a:nth-child(3):hover ~ span {
+    left: 280px;
+    width: 110px;
 }
 
 #piePagina{
@@ -118,7 +125,7 @@ nav a:nth-child(4):hover ~ span {
 @media(max-width:900px) {
     body{
 
-        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        background: url('/pages/img/fondo5.jpg');
         font-size: 18px;
         padding: 20px;
         border-radius: 12px;
@@ -151,7 +158,7 @@ nav a:nth-child(4):hover ~ span {
         background: rgba(255, 255, 255, 0.096);
     }
     .container {
-        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        background: url('/pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;
@@ -190,6 +197,11 @@ nav a:nth-child(4):hover ~ span {
     nav span {
         display: none; /* Opcional: Ocultar el span en pantallas pequeñas */
     }
+    nav a:hover{
+    color: #ffffff;
+    text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+    font-size: medium;
+    }
     .container h3{
         font-size: 20px;
         font-weight: bold;
@@ -201,7 +213,7 @@ nav a:nth-child(4):hover ~ span {
         background: rgba(255, 255, 255, 0.096);
     }
     .container {
-        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        background: url('/pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;
@@ -239,6 +251,11 @@ nav a:nth-child(4):hover ~ span {
     nav a {
         font-size: 0.8em;
     }
+    nav a:hover{
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #535252, 2px 2px 0 #00000096;
+        font-size: medium;
+        }
     .container h3{
         font-size: 20px;
         font-weight: bold;
@@ -251,7 +268,7 @@ nav a:nth-child(4):hover ~ span {
     }
 
     .container {
-        background: url('https://media.istockphoto.com/id/157526986/es/foto/pollo-asado-a-la-parrilla.jpg?s=1024x1024&w=is&k=20&c=g7CXvc8qTriMFY7gM-zz8PJ9WJufC5cnCqz6auG7sw4=');
+        background: url('/pages/img/fondo5.jpg');
         display: flex;
         flex-direction: column;
         border-radius: 12px;

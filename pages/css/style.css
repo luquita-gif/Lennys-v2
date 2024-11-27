@@ -3,45 +3,68 @@ body{
     justify-content: start;
     align-items:baseline;
     min-height: 100vh;
-    background: url('/pages/img/fondo.jpg');
+    background: linear-gradient(black,grey,black);
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
 }
-
-.publicidad span{
-    align-items: start;
-    margin-right: 10px;
+header, section, footer{
+    background: url('/pages/img/fondo5.jpg');
 }
-.publicidad img{
-    width: 6%;
-    height: 6%;
+#barra{
+    background: rgba(0, 0, 0, 0.527) !important;
+    margin:auto;
+    border-radius: 6px;
+    /* fondo de la barra*/
+}
+#barra img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.navbar-brand{ 
+    /* Lennys dentro de la barra*/
+    font-size: 20px!important;
+    font-weight: bold;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 0 #1d1b1b, 2px 2px 0 #bbb, 3px 3px 0 #aaa;
+}
+
+section{
     border-radius: 8px;
-}
-nav{
-    background-color: #000000a1;
-    overflow: hidden;
+    margin: 2px;
+    padding: 3px;
 }
 
-.container{
-    color: white;
-    text-align: center;
-    width:996px;
-	margin:0px auto;
-	font-size:1em;
-}
-.section{
-    float: left;
-    width: 70%;
-}
 #presentacion{
+    /*Apartado donde dice: Toda nuestra info*/
     border: 1px solid rgba(43, 30, 30, 0.393) !important;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     margin: 10px;
-    background-color: #4f191979;
+    background-color: #000000d7;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+#presentacion img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+#presentacion img:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+#letraInicio{
+    /*Letras lennys 3d*/
+        font-size: 40px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+    
 }
 .row{
     display: flex;
@@ -51,18 +74,21 @@ nav{
  border-radius: 8%;
  padding: 8px;
 }
-.footer{
-
-
+div iframe{
+    height:300px; 
+    width:300px; 
+    margin-left: 20%;
+     border-radius:12px;
 }
+
 #piePagina{
     font-family: 'Times New Roman', Times, serif;
     border: 1px solid rgba(255, 255, 255, 0.272);
     border-radius: 8px;
-    background-color: #4f1919ad;
+    background-color: #000000b2;
     color: rgba(255, 255, 255, 0.802);
-    padding: 3px;
-    margin:10px;
+    padding-top: 7px;
+    margin:0px;
 	text-align:center;
     clear:both;
 }
@@ -71,71 +97,102 @@ nav{
     background-color: #00000065;
     border-radius: 10px;
 }
-.imagenBarra{
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    padding: 5px;
+
+/* General: Ajustes base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
-.imagenBarra2{
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
+
+/* Media Query para Tablets (Pantallas medianas, hasta 768px) */
+@media (max-width: 962px) {
+    header .navbar-brand {
+        font-size: 1.5em; /* Aumenta el texto para hacerlo más visible */
+    }
+
+    #letraInicio {
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .carousel img {
+        height: 50%; /* Reduce aún más el carrusel */
+        width: 50%;
+    }
+
+    #presentacion {
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+        text-align: center;
+    }
+    #presentacion img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    #presentacion img:hover{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    div iframe{
+        width: 70%; /* Asegura que el mapa ocupe todo el ancho */
+        height: 250px;
+        border-radius: 50%;
+    }
+
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
-.imagenBarra3{
-    width: 300px;
-    height: 300px;
-    border-radius: 12px;
-    padding: 5px;
-    justify-content: space-around;
-}
-#fondo-barra{
-    background-color: rgba(0, 0, 0, 0) !important;
-}
-.carousel-item{
-    display: flex;
-    justify-content: space-between;
-}
-@media screen and (max-width:980px) {
-    .container {
-        width:98%;
+
+/* Media Query para Celulares (Pantallas pequeñas, hasta 480px) */
+@media (max-width: 480px) {
+    #barra .container-fluid {
+        flex-direction: column; /* Ajusta el navbar para apilar los elementos */
     }
-    section {
-        width:68%;
+
+    #letraInicio {
+        font-size: 1.5em;
+        margin-bottom: 15px;
     }
-}
-@media screen and (max-width:700px) {
-    aside,section {
-        float:none;
-        width:96%;
+
+    .carousel img {
+        height: 50%; /* Reduce aún más el carrusel */
+        width: 50%;
     }
-    nav, section {
-        font-size:1.2em;
+
+    #presentacion {
+        font-size: 0.8em;
+        text-align: center;
     }
-    aside {
-        margin-top:5px;
+    #presentacion img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
     }
-    nav ul {
-        float:none;
-        clear:both;
+    #presentacion img:hover{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
     }
-}
-@media screen and (max-width:480px) {
-    aside {
-        display:none;
+    div iframe{
+        width: 70%; /* Mapa a ancho completo */
+        height: 200px; /* Ajustar altura para móviles */
+        margin-left: 10%;
+
     }
-    nav, section {
-        font-size:1.5em;
+
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
     }
-    section {
-        width:94%;
-    }
-    nav ul {
-        float:left;
-        clear:none;
-        width:50%;
-    }
-    nav ul li {
-        float:none;
+
+    footer img {
+        width: 25px;
+        height: 25px;
     }
 }
