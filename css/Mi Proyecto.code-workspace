@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Mi Proyecto"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Intento potatos2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Pagina Lennys"
+	}
+}
