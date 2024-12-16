@@ -10,7 +10,7 @@ body{
     font-size: large;
 }
 header, section, footer{
-    background: url('/pages/img/fondo5.jpg');
+    background: url('../img/fondo5.jpg');
 }
 #barra{
     background: rgba(0, 0, 0, 0.527) !important;
